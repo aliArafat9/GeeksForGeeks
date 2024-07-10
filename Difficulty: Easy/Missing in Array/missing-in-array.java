@@ -27,10 +27,11 @@ class GFG {
 // User function Template for Java
 class Solution {
     int missingNumber(int n, int arr[]) {
-        int sum=(n*(n+1))/2;
-        for(int i=0;i<arr.length;i++){
-            sum = sum-arr[i];
+        int sum_arr=0;
+        for(int i = 0;i<arr.length;i++){
+            sum_arr+=arr[i];
         }
-        return sum;
+        int sum_n=(n*(n+1))/2;
+        return sum_n-sum_arr;
     }
 }
