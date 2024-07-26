@@ -26,12 +26,19 @@ class GFG {
 
 // User function Template for Java
 class Solution {
+
+    // Note that the size of the array is n-1
     int missingNumber(int n, int arr[]) {
-        int sum_arr=0;
-        for(int i = 0;i<arr.length;i++){
-            sum_arr+=arr[i];
+
+        // Your Code Here
+       // sum of n Natural number
+        int s= n*(n+1)/2;
+        int sum=0;
+        //Sum of the given array
+        for(int i =0; i<n-1;i++){
+            sum = sum + arr[i];
         }
-        int sum_n=(n*(n+1))/2;
-        return sum_n-sum_arr;
+        //return the missing element
+        return s-sum;
     }
 }
