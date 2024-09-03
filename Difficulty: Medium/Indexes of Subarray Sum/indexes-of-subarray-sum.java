@@ -49,9 +49,6 @@ class GFG {
 
 
 
-
-
-
 class Solution {
     public static ArrayList<Integer> subarraySum(int[] arr, int n, int s) {
         // code here
