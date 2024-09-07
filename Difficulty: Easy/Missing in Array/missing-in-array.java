@@ -40,5 +40,5 @@ class Solution {
         int d=ss-s;
         return d;
     }
-       
-    }
+    
+}
